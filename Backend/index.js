@@ -11,10 +11,7 @@ app.use(express.json());
 
 app.use(cors());
 
-
-
-mongoose.connect("mongodb+srv://suriya:RQGOtEp9Q9bWwnAL@cluster0.akspe9j.mongodb.net/roopanProfolio")
-.then(() => {
+mongoose.connect(process.env.MONGODB_URI).then(() => {
   console.log("Connected to MongoDB");
 })
 .catch((error) => {
@@ -255,7 +252,7 @@ app.get('/show_projects', async (req, res) => {
 
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
