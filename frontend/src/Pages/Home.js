@@ -8,7 +8,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3000/show_details')
+    fetch('https://roovan-portfolio-2.onrender.com/show_details')
       .then(response => response.json())
       .then(data => {
         setPersonalDetails(data);

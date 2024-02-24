@@ -6,7 +6,7 @@ function About() {
   const [fetchedEduDetails, setFetchedEduDetails] = useState([eduDetails,personalDetails]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/show_edu_details')
+    fetch('https://roovan-portfolio-2.onrender.com/show_edu_details')
       .then(response => response.json())
       .then(data => {
         setFetchedEduDetails(data);
@@ -20,7 +20,7 @@ function About() {
   const [fetchedworkdetails, setFetchedworkdetails] = useState([eduDetails,personalDetails]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/show_work_details')
+    fetch('https://roovan-portfolio-2.onrender.com/show_work_details')
       .then(response => response.json())
       .then(data => {
         setFetchedworkdetails(data);
