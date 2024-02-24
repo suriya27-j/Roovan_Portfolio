@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(cors());
 
-mongoose.connect(process.env.MONGODB_URI).then(() => {
+mongoose.connect("mongodb+srv://suriya:RQGOtEp9Q9bWwnAL@cluster0.akspe9j.mongodb.net/roopanProfolio").then(() => {
   console.log("Connected to MongoDB");
 })
 .catch((error) => {

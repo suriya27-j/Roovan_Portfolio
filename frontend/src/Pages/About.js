@@ -38,7 +38,7 @@ function About() {
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           About Me
-        </h1>
+        </h1>0
         <p className="text-content py-8 lg:max-w-5xl">{fetchedEduDetails[0].About}</p>
       </section>
       
