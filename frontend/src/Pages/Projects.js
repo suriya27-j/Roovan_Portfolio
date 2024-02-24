@@ -8,7 +8,7 @@ function Projects() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('http://localhost:3000/show_projects');
+        const response = await fetch('https://roovan-portfolio-2.onrender.com/show_projects');
         const data = await response.json();
         setProjects(data);
       } catch (error) {
